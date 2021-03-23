@@ -1,0 +1,448 @@
+/* Design général ------------------------------------------ */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* Design typo ------------------------------------------ */
+ body{
+	 font-family: "helvetica neue", sans-serif;
+	 background-image: url(images/background.jpg);
+ }
+
+/* title */
+
+/* text */
+
+/* Header ------------------------------------------ */
+
+ header{
+	width: 100vw;
+	height: 10vh;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 9999;
+}
+
+u{
+	margin-left: 10px;
+}
+
+.name{
+	margin-top: 10px;
+	margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gost-menu{
+	width: 100vw;
+	height: 10vh;
+}
+
+.logo{
+	width: 5vw;
+}
+h1{
+	font-size: 3vw;
+}
+
+.nav{
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+
+.menu{
+	margin-right: 30px;
+	background-color: white;
+}
+
+.menu a {
+	clear: both;
+	text-decoration: none;
+	color: black;
+	margin-right: 30px;
+	line-height: 70px;
+}
+label{
+	margin-right: 40px;
+	font-size: 30px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#switch{
+	display: none;
+}
+
+@media (max-width: 850px){
+	header{
+		display: block;
+	}
+
+	.name{
+		float: left;
+		margin-top: 10px;
+	}
+
+	.logo{
+		width: 10vw;
+	}
+
+	.u{
+		font-size: 5vw;
+	}
+
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color: white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0px;
+	}
+	#switch:checked + .menu{
+		display: block;
+	}
+}
+
+/* Section 1 ------------------------------------------ */
+
+.section1{
+	background-image: url(images/guitars.jpg);
+	width: 100vw;
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+
+.about{
+	width: 325px;
+	height: 250px;
+	border-radius: 5%;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-left: 10vw;
+	margin-bottom: 4vh;
+	position: sticky;
+	top: 38vh;
+}
+
+.welcom{
+	font-size: 17px;
+	color: white;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.welcom2{
+	font-size: 17px;
+	color: white;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+.arrow{
+	margin-top: 70px;
+	width: 325px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.B-about{
+	font-size: 15px;
+	color: white;
+}
+
+.next{
+	width: 15px;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+
+/* Section 2 ------------------------------------------ */
+
+.titleS2{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+	
+}
+
+ .section2{
+	padding-top: 100px;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+.item{
+	height: 275px;
+	width: 360px;
+	margin: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-right: 2px solid grey;
+
+}
+
+.info{
+	background-color: red;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.img2{
+	width: 60%;
+	margin-bottom: 15px;
+}
+
+.model{
+	font-size: 15px;
+}
+.price{
+	font-size: 20px;
+}
+
+.services{
+	height: 5vh;
+	width: 30vh;
+	margin: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.services p{
+	font-size: 15px;
+} 
+
+@media (max-width: 850px){
+
+.services{
+	height: 10vh;
+	width: 30vh;
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.titleS2{
+	font-size: 8vw;
+}
+
+}
+/* Section 3 ------------------------------------------ */
+
+.titleP3{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 50px;
+}
+.section3{
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* à rendre responsive sous 970 px */
+.box3{
+	height: 60vh;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box3B{
+
+	height: 60vh;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img3{
+	width: 20vh;
+	border-radius: 50%;
+}
+
+@media (max-width: 850px){
+
+	.titleP3{
+		font-size: 8vw;
+	}
+
+	.section3{
+		display: inline;
+	}
+
+	.box3{
+		height: 30vh;
+		margin-top: 5vh;
+		margin-left: 0px;
+		margin-right: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.box3B{
+		height: 30vh;
+		margin-top: 5vh;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+
+/* Section 4 ------------------------------------------ */
+
+.section4{
+	padding-top: 100px;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+}
+
+.story{
+	font-size: 50px;
+}
+
+.blocsct4{
+	margin-top: 50px;
+	margin-bottom: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titreSection4{
+	width: 30vw;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.imgS4{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	width: 25vw;
+	border-radius: 50%;
+	filter: saturate(0) blur(2px);
+}
+
+ 
+
+.imgS4:hover{
+filter: saturate(1) blur(0px);
+animation-name: circle;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes circle{
+	0%{
+		border-radius: 50%;
+		filter: saturate(0) blur(2px);
+	}
+	100%{
+		border-radius: 20%;
+		filter: saturate(1) blur(Opx);
+	}
+}
+
+.txtS4{
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.txtS4 h4{
+	font-size: 25px;
+}
+
+ @media (max-width: 850px){
+
+
+.story{
+	font-size: 8vw;
+}
+
+.imgS4{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 2vh;
+	width: 40vw;
+	border-radius: 50%;
+	filter: saturate(1) blur(0);
+
+}
+
+.blocsct4{
+	display: flex;
+	flex-direction: column;
+	align-items: none;
+}
+
+.txtS4{
+	width: 90vw;
+}
+
+.txtS4 h4{
+	font-size: 2vh;
+}
+
+} 
+
+/* Footer ------------------------------------------ */
+
+footer{
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+footer a{
+	color: black;
+	text-decoration: none;
+	margin: 25px;
+}
